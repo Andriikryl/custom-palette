@@ -129,7 +129,7 @@ textarea:not([rows]) {
 .wrapper{
     --gap: clamp(1rem, 6vw, 3rem);
     --full: minmax(var(--gap), 1fr);
-    --content: min(90ch, 100% - var(--gap) * 2);
+    --content: min(120ch, 100% - var(--gap) * 2);
     --popout: minmax(0, 2rem);
     --feature: minmax(0, 5rem);
     display: grid;
@@ -145,6 +145,8 @@ textarea:not([rows]) {
 
 .wrapper > * {
     grid-column: content;
+    position: relative;
+    z-index: 100;
   }
   /* .popout {
     grid-column: popout;
