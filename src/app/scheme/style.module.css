@@ -8,7 +8,7 @@
     margin-block-end: 20px;
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 64px;
+    font-size: 54px;
     line-height: 120%;
     color: var(--white);
     margin-block-end: 30px;
@@ -76,17 +76,15 @@
 }
 
 .flow{
-    --min: 15ch;
-    --gap: 1rem;
-    display: grid;
-    place-items: center;
-    gap: var(--gap);
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-block-end: 20px;
 }
 
 .scheme__wrapper{
-    --size: 150px;
-    width: var(--size);
+    --size: 120px;
+    width: 200px;
     backdrop-filter: blur(10px);
     background-color: hsl(0, 0%, 100%, .1);
     border-radius: 3px;
@@ -94,7 +92,6 @@
 }
 
 .scheme__box{
-    width: var(--size);
     height: var(--size);
 }
 
@@ -178,10 +175,8 @@
 }
 
 .paletes__wrapper{
-    --min: 49px;
-    --gap: 0rem;
-    display: grid;
-    place-items: center;
-    gap: var(--gap);
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-block-end: 20px;
 }
