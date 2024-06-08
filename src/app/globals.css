@@ -157,3 +157,12 @@ textarea:not([rows]) {
   .full {
     grid-column: full;
   } */
+
+  .flow{
+    display: grid;
+    grid-template-columns: fit-content(20ch) minmax(min(50vw, 30ch), 1fr);
+  }
+
+ .nav{
+  min-width: 300px;
+ }

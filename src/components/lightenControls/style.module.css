@@ -1,0 +1,18 @@
+.button__group{
+    display: flex;
+    gap: 5px;
+    width: fit-content;
+    margin-inline: auto;
+    margin-block-end: 20px;
+}
+
+.button{
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    width: 100px;
+    height: 40px;
+    background-color: hsl(0, 0%, 100%, .1);
+    cursor: pointer;
+}

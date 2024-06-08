@@ -1,0 +1,14 @@
+.wrapper{
+    padding-block-start: 40px;
+    width: 100%;
+    height: 100dvh;
+    background-color: #f9d3e5;
+    position: sticky;
+    top: 0;
+}
+
+.icon__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
