@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import WrapperStore from "@/store/WrapperStore";
+import Nav from "@/components/nav/Nav";
+import AsiedeWrapper from "@/components/asideWrapper/AsiedeWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <WrapperStore>
-          <main>{children}</main>
+          <main>
+            <AsiedeWrapper aside={<Nav />} main={<div>{children}</div>} />
+          </main>
         </WrapperStore>
       </body>
     </html>
