@@ -1,0 +1,15 @@
+.list{
+    padding-inline-start: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.list__item{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: var(--white);
+    padding-block-end: 10px;
+    border-bottom: 1px solid #ffc300;
+}
