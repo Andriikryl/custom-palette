@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styles from "./style.module.css";
 import AsiedeWrapper from "@/components/asideWrapper/AsiedeWrapper";
 import ColorType from "@/components/colorType/ColorType";
+import { Button } from "@/components/button/Button";
 
 type ColorButton = {
   name: string;
@@ -161,9 +162,9 @@ export default function Mixer() {
 
     return (
       <div className={styles.flex__group}>
-        <button onClick={() => handleDecrement(colorItem.name)}>-</button>
+        <Button onClick={() => handleDecrement(colorItem.name)}>-</Button>
         <p>{percentage}%</p>
-        <button onClick={() => handleIncrement(colorItem.name)}>+</button>
+        <Button onClick={() => handleIncrement(colorItem.name)}>+</Button>
       </div>
     );
   };
