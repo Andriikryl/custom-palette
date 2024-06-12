@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
 import { getRandomHex } from "@/utils/randomHex";
 import { colord } from "colord";
+import { Button } from "@/components/button/Button";
 
 export default function Random() {
   const [amount, setAmount] = useState(16);
@@ -24,9 +25,9 @@ export default function Random() {
     <div className={styles.random__wrapper}>
       <h1 className={styles.random__title}>Random Color Generator</h1>
       <div className={styles.controls}>
-        <button onClick={Dicrement}>-</button>
+        <Button onClick={Dicrement}>-</Button>
         <p>{amount}</p>
-        <button onClick={Increment}>+</button>
+        <Button onClick={Increment}>+</Button>
       </div>
       <div className={styles.palette__wrapper}>
         {colors.map((color, index) => (
